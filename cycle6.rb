@@ -23,11 +23,6 @@ require "./nuage"
 class APPLI
   VERSION = '1.0'
 
-#
-# Exemple :
-#       appli = APPLI.new()
-#       port = 1234
-#       appli = APPLI.new(port)
   def initialize(port=5555)
    @webrick = WEBrick::HTTPServer.new(
      :Port         => port,
